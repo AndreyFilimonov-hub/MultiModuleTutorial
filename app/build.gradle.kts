@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.filimonov.multimoduletutorial"
+    namespace = "com.filimonov.stepikclient"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.filimonov.multimoduletutorial"
+        applicationId = "com.filimonov.stepikclient"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -63,4 +63,5 @@ dependencies {
     implementation(project(":feature:home"))
     implementation(project(":core:data"))
     implementation(project(":core:domain"))
+    implementation(project(":core:network"))
 }

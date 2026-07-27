@@ -14,7 +14,7 @@ private val localProperties = localPropertiesFile.inputStream().use { inputStrea
 private val apiKey = localProperties.getProperty("API_KEY")
 
 android {
-    namespace = "com.filimonov.data"
+    namespace = "com.filimonov.stepikclient.core.data"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -26,8 +26,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-
-        buildConfigField("String", "API_KEY", apiKey)
     }
 
     buildTypes {
@@ -42,10 +40,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
-    }
-
-    buildFeatures {
-        buildConfig = true
     }
 }
 
@@ -66,4 +60,5 @@ dependencies {
     implementation(libs.koin.core)
 
     implementation(project(":core:domain"))
+    implementation(project(":core:network"))
 }

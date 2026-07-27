@@ -22,8 +22,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MultiModuleTutorial"
+rootProject.name = "StepikClient"
 include(":app")
 include(":feature:home")
 include(":core:domain")
 include(":core:data")
+include(":core:network")

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.filimonov.multimoduletutorial.feature.home"
+    namespace = "com.filimonov.stepikclient.feature.home"
 
     compileSdk {
         version = release(36) {
