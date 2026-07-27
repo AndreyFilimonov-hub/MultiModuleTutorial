@@ -61,4 +61,6 @@ dependencies {
     implementation(libs.koin.compose.viewmodel)
 
     implementation(project(":feature:home"))
+    implementation(project(":core:data"))
+    implementation(project(":core:domain"))
 }

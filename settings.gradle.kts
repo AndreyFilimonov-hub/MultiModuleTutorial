@@ -25,4 +25,5 @@ dependencyResolutionManagement {
 rootProject.name = "MultiModuleTutorial"
 include(":app")
 include(":feature:home")
- 
+include(":core:domain")
+include(":core:data")

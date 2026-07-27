@@ -1,6 +1,5 @@
 package com.filimonov.multimoduletutorial.feature.home.presentation
 
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -14,8 +13,10 @@ fun HomeScreen(
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
 
-    Text(
-        modifier = modifier,
-        text = state.title
-    )
+    when(val currentState = state) {
+        is HomeUiState.Error -> TODO()
+        HomeUiState.Idle -> Unit
+        HomeUiState.Loading -> TODO()
+        is HomeUiState.Success -> TODO()
+    }
 }

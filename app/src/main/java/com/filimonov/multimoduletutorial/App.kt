@@ -1,6 +1,7 @@
 package com.filimonov.multimoduletutorial
 
 import android.app.Application
+import com.filimonov.data.di.networkModule
 import com.filimonov.multimoduletutorial.di.appModule
 import com.filimonov.multimoduletutorial.feature.home.di.homeModule
 import org.koin.android.ext.koin.androidContext
@@ -16,7 +17,8 @@ class App : Application() {
 
             modules(
                 appModule,
-                homeModule
+                homeModule,
+                networkModule
             )
         }
     }
