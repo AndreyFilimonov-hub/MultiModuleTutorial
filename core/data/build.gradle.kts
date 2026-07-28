@@ -58,6 +58,9 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
 
     implementation(libs.koin.core)
+    implementation(libs.koin.android)
+
+    implementation(libs.androidx.datastore.preferences)
 
     implementation(project(":core:domain"))
     implementation(project(":core:network"))
