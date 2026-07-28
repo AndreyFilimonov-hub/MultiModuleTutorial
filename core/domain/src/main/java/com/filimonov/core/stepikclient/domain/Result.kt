@@ -1,4 +1,4 @@
-package com.filimonov.core.domain
+package com.filimonov.core.stepikclient.domain
 
 sealed interface Result<out T> {
 

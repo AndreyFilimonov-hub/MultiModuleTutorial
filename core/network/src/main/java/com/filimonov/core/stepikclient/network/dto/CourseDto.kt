@@ -1,4 +1,4 @@
-package com.filimonov.stepikclient.network.dto
+package com.filimonov.core.stepikclient.network.dto
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

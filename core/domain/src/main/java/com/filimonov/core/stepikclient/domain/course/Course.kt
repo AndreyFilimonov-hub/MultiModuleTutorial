@@ -1,4 +1,4 @@
-package com.filimonov.core.domain.course
+package com.filimonov.core.stepikclient.domain.course
 
 data class Course(
     val id: Long,

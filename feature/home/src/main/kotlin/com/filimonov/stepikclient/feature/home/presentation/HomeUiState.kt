@@ -1,7 +1,7 @@
 package com.filimonov.stepikclient.feature.home.presentation
 
-import com.filimonov.core.domain.NetworkError
-import com.filimonov.core.domain.course.Course
+import com.filimonov.core.stepikclient.domain.NetworkError
+import com.filimonov.core.stepikclient.domain.course.Course
 
 sealed interface HomeUiState {
 

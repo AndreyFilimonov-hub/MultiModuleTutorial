@@ -1,6 +1,6 @@
-package com.filimonov.stepikclient.network.di
+package com.filimonov.core.stepikclient.network.di
 
-import com.filimonov.stepikclient.network.api.StepikApi
+import com.filimonov.core.stepikclient.network.api.StepikApi
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType

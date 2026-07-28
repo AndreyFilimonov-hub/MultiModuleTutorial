@@ -1,8 +1,8 @@
 package com.filimonov.stepikclient.core.data.remote.mapper
 
-import com.filimonov.core.domain.course.Course
-import com.filimonov.stepikclient.network.dto.CourseDto
-import com.filimonov.stepikclient.network.dto.CourseResponseDto
+import com.filimonov.core.stepikclient.domain.course.Course
+import com.filimonov.core.stepikclient.network.dto.CourseDto
+import com.filimonov.core.stepikclient.network.dto.CourseResponseDto
 
 fun CourseDto.toDomain() = Course(
     id = id,

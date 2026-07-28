@@ -1,9 +1,10 @@
 package com.filimonov.stepikclient.feature.home.presentation
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.filimonov.core.domain.Result
-import com.filimonov.core.domain.course.usecase.GetCoursesUseCase
+import com.filimonov.core.stepikclient.domain.Result
+import com.filimonov.core.stepikclient.domain.course.usecase.GetCoursesUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

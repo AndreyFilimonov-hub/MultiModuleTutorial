@@ -1,6 +1,6 @@
 package com.filimonov.stepikclient.core.data.remote
 
-import com.filimonov.core.domain.NetworkError
+import com.filimonov.core.stepikclient.domain.NetworkError
 import kotlinx.serialization.SerializationException
 import retrofit2.HttpException
 import java.io.IOException

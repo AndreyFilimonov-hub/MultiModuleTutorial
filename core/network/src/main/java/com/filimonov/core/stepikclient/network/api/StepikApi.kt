@@ -1,6 +1,6 @@
-package com.filimonov.stepikclient.network.api
+package com.filimonov.core.stepikclient.network.api
 
-import com.filimonov.stepikclient.network.dto.CourseResponseDto
+import com.filimonov.core.stepikclient.network.dto.CourseResponseDto
 import retrofit2.http.GET
 import retrofit2.http.Query
 

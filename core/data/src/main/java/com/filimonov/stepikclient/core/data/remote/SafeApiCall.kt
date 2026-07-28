@@ -1,6 +1,6 @@
 package com.filimonov.stepikclient.core.data.remote
 
-import com.filimonov.core.domain.Result
+import com.filimonov.core.stepikclient.domain.Result
 import kotlinx.coroutines.CancellationException
 
 internal suspend fun <T> safeApiCall(apiCall: suspend () -> T): Result<T> {
