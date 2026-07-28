@@ -1,20 +1,11 @@
-import java.util.Properties
-
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlin.compose)
 }
-
-private val localPropertiesFile = rootProject.file("local.properties")
-private val localProperties = localPropertiesFile.inputStream().use { inputStream ->
-    Properties().apply {
-        load(inputStream)
-    }
-}
-private val apiKey = localProperties.getProperty("API_KEY")
 
 android {
-    namespace = "com.filimonov.stepikclient.core.data"
+    namespace = "com.filimonov.stepikclient.feature.startup"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -41,6 +32,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures {
+        compose = true
+    }
 }
 
 dependencies {
@@ -51,17 +45,14 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.kotlinx)
-    implementation(libs.okhttp)
-    implementation(libs.okhttp.logging)
-    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
 
-    implementation(libs.koin.core)
-    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+    implementation(libs.koin.compose.viewmodel)
 
-    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.navigation.compose)
 
-    implementation(project(":core:domain"))
-    implementation(project(":core:network"))
+    implementation(project(":core:data"))
 }
