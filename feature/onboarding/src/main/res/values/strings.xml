@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_courses_title">Тысячи курсов у тебя в кармане</string>
+    <string name="onboarding_courses_desc">Программирование, математика, языки и не только — учись у ведущих преподавателей в любое время</string>
+    <string name="onboarding_progress_title">Учись в своём темпе</string>
+    <string name="onboarding_progress_desc">Проходи уроки, решай задачи и следи за прогрессом — Stepik подстроится под твоё расписание</string>
+    <string name="onboarding_certificate_title">Подтверди свои знания</string>
+    <string name="onboarding_certificate_desc">Получай сертификаты за пройденные курсы и добавляй их в резюме</string>
+    <string name="login">Войти</string>
+</resources>
